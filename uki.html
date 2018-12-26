@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="/home/ukistu19/Documents/uki4/jQuery/jquery-3.3.1.js">
+    </script>
+    <script>
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("ul").hide();
+      });
+      $("#show").click(function(){
+        $("ul").show();
+      });
+    });
+    </script>
+    <script>
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideDown("slow");
+    });
+  });
+  </script>
+  <script>
+  $(document).ready(function(){
+    $("#detail").click(function(){
+      $("p2").hide();
+    });
+  });
+  </script>
+  <script>
+$(document).ready(function(){
+  $("#p").mouseenter(function(){
+    alert("The Page Says You entered to Uki!");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("h2").hover(function(){
+    $(this).css("background-color", "lightblue");
+    }, function(){
+    $(this).css("background-color", "pink");
+  });
+});
+</script>
+ <title>uki web page</title>
+ <style>
+#rcorners1 {
+   border-radius: 25px;
+   background:  powderblue;
+   padding: 20px;
+   width: 700px;
+   height: 300px;
+}
+#rcorners2 {
+   border-radius: 25px;
+   background:  gray;
+   padding: 20px;
+   width: 400px;
+   height: 240px;
+   margin-left: 25px;
+   margin-top: 200px;
+}
+#rcorners3 {
+   border-radius: 25px;
+   background:  gray;
+   padding: 20px;
+   width: 500px;
+   height: 240px;
+position: absolute;
+top:880px;
+left:750px;
+}
+#footer{
+ background: powderblue;
+ margin-top: 60px;
+ height:30px;
+}
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+ </head>
+<body>
+<center>
+ <a href="///home/ukistu01/Documents/uki4/programming/HTML/index.html">Home</a> |
+ <a href="/home/ukistu19/Documents/uki4/HTML/form.html">Form</a> |
+<a href="/home/ukistu19/Documents/uki4/HTML/table.html">Timetable</a>
+</center>
+
+<center><img src="/home/ukistu19/Pictures/ukilogo.png" alt="Uki.life" width="1200px"></center><br>
+</br><div id="flip">Welcome to Uki</div>
+<div id="panel">Hai Uki</div><br><br>
+<center><div id="rcorners1" align="center">
+
+ <b><h2>Welcome to Uki : Stepping stone to tech life</h2></b><p id="p">It is a full scholarship based Accelerator program for Coding in Jaffna, Sri Lanka targeti
+ng students who has completed Advanced Level examinations and do not have access to university education
+or any other form of vocational education. It is aimed to provide the necessary training to enter Computer
+Software industry or to start an IT startup.
+This is a joint initiative by Yarl IT Hub and SERVE Foundation. Yarl IT Hub has been functioning for the last five years as a not for profit social enterprise focusing on technology entrepreneurship in northern Sri Lanka and SERVE Foundation is a four year old foundation.
+focusing on using technology to uplift secondary education standards in rural schools in northern Sri Lanka.</p></div>
+</center>
+<div>
+<div>
+  <div id="rcorners2" >
+ <h2>course</h2>
+ Our vision  is to be a leading center excellence in teaching, learning, research and scholorship <br>
+ <ul style="list-style-type:disc">
+  <li>Programming</li>
+  <li>Basic Business Skills</li>
+  <li>Spoken English and communications skills</li>
+  <li>Personal Coaching</li>
+</ul>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+</div><br><br>
+<div id="rcorners3" class="absolute">
+  <h2>CODING ACCELERATOR PROGRAM</h2>
+<p1>This Coding Accelerator program is an intensive training on full-stack development with server-side Node.js and modern, client-side, front-end libraries and frameworks.Throughout this intensive course the student will study professional software development techniques and practices as he/she advances his/her skills on JavaScript.</p2><br><br>
+<button id="detail">Detail</button>
+</div>
+</div>
+<footer><div id="footer"><center>2018 &#169; Uki AllRights Reserved. A joint initative by Yarl IT Hub and SERVE Foundation.</center></div></footer>
+ </body>
+ </html>
